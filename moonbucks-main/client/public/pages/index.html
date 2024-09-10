@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" href="/client/public/assets/img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Moonbucks Cafe</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="Your Website Logo"
+                style="height: 70px;width: 70px;display: flex; position:absolute;left: 0;top: 7px;">
+            <a href="#">Moonbucks<span>Cafe</span></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="meet.html">Meet the Farmers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Moonbucks Cafe</h1>
+        <h2>Fuel Your Day, One Sip at a Time</h2>
+        <p><i>Premium Coffee for Busy Lives</i></p>
+    </div>
+    <section class="blogs" id="blogs">
+        <div class="scrolling-text-container">
+            <p class="scrolling-text">Best Sellers Todayy!!!!...Grab Your Favourites!!!!</p>
+        </div>
+        <div class=" swiper blogs-row">
+            <div class="swiper-wrapper">
+
+
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="../assets/img/Gemini_Generated_Image_tsrnpptsrnpptsrn.jfif" alt="">
+                    </div>
+                    <div class="contents">
+                        <h3>Croissants</h3>
+                        <p>Our flaky, buttery croissants are a customer favorite! These versatile pastries are perfect
+                            for satisfying your breakfast cravings or enjoying a light snack anytime.These buttery and
+                            flaky pastries are a versatile option, perfect for breakfast or a light
+                            snack.</p>
+                        <p> Flaky, buttery perfection! </p>
+                        <a href="menu.html" class="btn">Explore menu</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="../assets/img/Gemini_Generated_Image_ousv4dousv4dousv.jfif" alt="">
+                    </div>
+                    <div class="contents">
+                        <h3>Chocolate Nirvana Sundae</h3>
+                        <p>Calling all dessert lovers! Our top-selling Chocolate Nirvana Sundae is a decadent
+                            masterpiece that combines rich flavors and a variety of delicious toppings.This decadent
+                            sundae combines rich flavors and various toppings, appealing to those seeking
+                            a luxurious dessert experience.</p>
+                        <p> Indulge in pure bliss! </p>
+                        <a href="menu.html" class="btn">Explore menu</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="../assets/img/Gemini_Generated_Image_b0okh5b0okh5b0ok.jfif" alt="">
+                    </div>
+                    <div class="contents">
+                        <h3>Chocolate Chip Frappuccino</h3>
+                        <p>Craving a classic and refreshing coffee drink? Look no further than our best-selling
+                            Chocolate Chip Frappuccino. This creamy, blended beverage is perfect for chocolate lovers
+                            and coffee enthusiasts alike...This classic beverage is a popular choice year-round,
+                            especially for coffee lovers who enjoy
+                            a blended, chocolatey drink.</p>
+                        <p>Your classic pick-me-up!</p>
+                        <a href="menu.html" class="btn">Explore menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <div class="mainbox">
+        <section class="reservation-form">
+            <div class="reservation-image">
+                <img src="../assets/img/top-view-people-table-restaurant.jpg" alt="Cafe Ambiance">
+            </div>
+            <div class="reservation-content">
+                <h2>Reserve Your Table</h2>
+                <form action="config.html" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests:</label>
+                        <input type="number" id="guests" name="guests" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="datetime">Reservation Date & Time:</label>
+                        <input type="datetime-local" id="datetime" name="datetime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Special Notes:</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                    <button type="submit" onclick="submitForm()">Reserve</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <section class="review" id="review">
+        <div class="heading">
+            <h2>Client Review</h2>
+        </div>
+        <div class=" swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="../assets/img/IMG-20240112-WA0215.jpg" alt="">
+                        </div>
+                        <div class="cl">
+                            <div class="client-review">
+                                <p>Not even a single day went well without having
+                                    a sip of
+                                    coffee from moonbucks</p>
+                            </div>
+                            <div class="clientDetailed">
+                                <h3>Kavya Sudha</h3>
+                                <!-- <p>ML Engineer</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="../assets/img/IMG-20240213-WA0053.jpg" alt="">
+                        </div>
+                        <div class="cl">
+                            <div class="client-review">
+                                <p>Loved this cafe, it always will hold a special
+                                    place
+                                    in my heart</p>
+                            </div>
+                            <div class="clientDetailed">
+                                <h3>Mahalakshmi</h3>
+                                <!-- <p>React Developer</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="../assets/img/riyaz.jfif" alt="">
+                        </div>
+                        <div class="cl">
+                            <div class="client-review">
+                                <p>Such a wonderful place to start your day with
+                                    a coffee that would'nt ever
+                                    disappoint</p>
+                            </div>
+                            <div class="clientDetailed">
+                                <h3>Riyaz</h3>
+                                <!-- <p>UI / UX designer</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="../assets/img/Snapchat-1787161475.jpg" alt="">
+                        </div>
+                        <div class="cl">
+                            <div class="client-review">
+                                <p>Just landed on moon 🌝bucks and found this wonderful cappuccino with effective
+                                    gravity
+                                    booster which made me float for a while. </p>
+                            </div>
+                            <div class="clientDetailed">
+                                <h3>Javaghar</h3>
+                                <!-- <p>Developer</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <div class="footer-box">
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <label>Copyright &copy; 2022</label>
+            </div>
+            <div class="brand">
+                <label>Moonbucks<span>Cafe</span></label>
+            </div> -->
+    <!-- </div> -->
+    <footer>
+        <div class="footer-opt">
+            <div class="footer-item">
+                <h3>Contact Us</h3>
+                <p>Moonbucks Cafe Street</p>
+                <p>City, State ZIP</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: Moonbucks@cafe.com</p>
+            </div>
+            <div class="footer-item">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 8am - 8pm</p>
+                <p>Saturday: 9am - 10pm</p>
+                <p>Sunday: 9am - 6pm</p>
+            </div>
+            <div class="footer-item">
+                <h3>Follow Us</h3>
+                <ul>
+                    <div class="social-media">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="com"> -->
+        <div class="copyright">
+            &copy; <b>2024 Moonbucks Cafe. All rights reserved.</b>
+        </div>
+        <div class="brand">
+            <label>Moonbucks<span>Cafe</span></label>
+        </div>
+        </div>
+        <!-- </div> -->
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="../assets/js/index.js"></script>
+</body>
+
+</html>

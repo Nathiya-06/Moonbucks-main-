@@ -1,0 +1,143 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #949621;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.listItem {
+    cursor: pointer;
+    padding: 10px;
+    transition: white 0.3s ease;
+}
+
+.listItem:hover {
+    background-color: #555;
+}
+
+.container {
+    background-color: #071c04;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+.inputbox {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btngroup {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* Button Colors */
+.bg-emerald-300 {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.bg-red-200 {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Form Image Container */
+#imagecontainer {
+    border: 2px dashed #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image Upload Styles */
+#fileiput {
+    width: 0;
+    height: 0;
+}
+
+/* Hover Effect for Image Container */
+#imagecontainer:hover {
+    border-color: #aaa;
+}
+
+/* Colorful Text */
+.logo {
+    color: #ff5733;
+    /* Orange */
+}
+
+.listItem {
+    color: #33aaff;
+    /* Blue */
+}
+
+label {
+    color: #d79907;
+    /* Pink */
+}
+
+.btngroup {
+    /* Green */
+    align-items: center;
+    margin: 0 10px;
+    margin-right: 300px;
+}
+
+footer {
+    bottom: 0;
+}
+
+/* Additional styles can be added as needed */

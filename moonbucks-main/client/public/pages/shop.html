@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Moonbucks Cafe</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Moonbucks<span>Cafe</span></a>
+            <img src="../assets/img/logo.png" alt="Your Website Logo" style="height: 60px;width: 60px;display: flex; position:absolute;left: 12px;;top: 8px;">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="meet.html">Meet the Farmers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="open-sidebar-btn">Open Sidebar</button>
+    <div class="sidebar">
+        <div class="close-icon" id="close-icon">&times;</div>
+        <nav class="navbar">
+            <button id="add-to-cart-btn">Add to Cart</button>
+            <button id="add-to-fav-btn">Add to Favorites</button>
+        </nav>
+        <div class="cart">
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>Total: <span id="total-cost">$0.00</span></p>
+            <button id="order-btn">Order</button>
+        </div>
+        <div class="favorites">
+            <ul id="fav-items">
+                <!-- Favorite items will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    <div class="shop" id="shop">
+        <!-- <div class="shop-header">
+        <h3>Shop</h3>
+        <h4>Blabla Coffee Drinks</h4>
+    </div> -->
+        <div class="shop-box">
+            <div class="item-1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_bxp07nbxp07nbxp0.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 299</label>
+                        <h3>Cappuccino </h3>
+                        <label>"Rich and Creamy Cappuccino"
+                        </label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_juwhf5juwhf5juwh.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">₹ 278</label>
+                        <h3>Americano </h3>
+                        <label>Bold Americano</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_5di0215di0215di0.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 341</label>
+                        <h3>Mocha </h3>
+                        <label>Decadent Mocha Delight </label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_97qdct97qdct97qd.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">₹ 330</label>
+                        <h3>Flat White</h3>
+                        <label>Smooth and Velvety Flat White</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_nfj16gnfj16gnfj1.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 362</label>
+                        <h3>Caramel Macchiato</h3>
+                        <label>Savor the Sweetness of Caramel Macchiato</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_guyd9oguyd9oguyd.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">₹ 330</label>
+                        <h3>Cortado</h3>
+                        <label>Harmonious Cortado Blend</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-7">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_vmwx3fvmwx3fvmwx.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 372</label>
+                        <h3>Cold coffee</h3>
+                        <label>Iced Coffee Bliss</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_7luab47luab47lua.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">₹ 315</label>
+                        <h3>Iced caffe' Americano</h3>
+                        <label>Refreshing Iced Caffè Americano Experience</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shop-box">
+            <div class="item-1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_ogm9d9ogm9d9ogm9.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 341</label>
+                        <h3>Iced caffe' Latte</h3>
+                        <label>Frosty Iced Caffè Latte Experience</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_roruddroruddroru.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">₹ 378</label>
+                        <h3>Iced Caffe' Mocha</h3>
+                        <label>Cool and Chocolatey Iced Mocha</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_90q4ox90q4ox90q4.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 336</label>
+                        <h3>Iced Cappuccino</h3>
+                        <label>Cool and Frothy Iced Cappuccino</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_ll73j4ll73j4ll73.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">₹ 341</label>
+                        <h3>Iced Chai latte</h3>
+                        <label>Iced Spiced Latte</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_cqdxamcqdxamcqdx.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 414</label>
+                        <h3>Chocolate chip Frappuccino </h3>
+                        <label>Cool Cocoa Chip Freeze</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_cghmhccghmhccghm.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">₹ 270</label>
+                        <h3>Croissant</h3>
+                        <label>Buttery Croissant Delight</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-7">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_ekdxfwekdxfwekdx.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 246</label>
+                        <h3>Cheesecake</h3>
+                        <label>Luxurious Cheesecake Treat</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_87quez87quez87qu.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">₹ 315</label>
+                        <h3>Chocolate Brownie</h3>
+                        <label>Fudgy Chocolate Brownie Delight</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shop-box">
+            <div class="item-1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_yrr4lyyrr4lyyrr4.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 238</label>
+                        <h3>Chocolate Nirvana Sundae</h3>
+                        <label>Bliss of Chocolate Nirvana Sundae</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_rpzhc9rpzhc9rpzh.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">₹ 160</label>
+                        <h3>Almond Biscotti </h3>
+                        <label>Crispy Almond Biscotti Bliss</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_qxu6tfqxu6tfqxu6.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 200</label>
+                        <h3>Chocolate Muffin </h3>
+                        <label>Moist Chocolate Muffin Delight</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/img/Gemini_Generated_Image_rk24plrk24plrk24.jfif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">₹ 400</label>
+                        <h3>Apple Pie </h3>
+                        <label>Traditional Apple Pie Bliss</label>
+                        <div class="icons-container">
+                            <button class="add-to-fav-btn" onclick="addToFavorites()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-opt">
+                <div class="footer-item">
+                    <h3>Contact Us</h3>
+                    <p>Moonbucks Cafe Street</p>
+                    <p>City, State ZIP</p>
+                    <p>Phone: 123-456-7890</p>
+                    <p>Email: Moonbucks@cafe.com</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 8am - 8pm</p>
+                    <p>Saturday: 9am - 10pm</p>
+                    <p>Sunday: 9am - 6pm</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <div class="social-media">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; <b>2024 Moonbucks Cafe. All rights reserved.</b>
+            </div>
+            <div class="brand">
+                <label>Moonbucks<span>Cafe</span></label>
+            </div>
+        </footer>
+        <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- <script src="../assets/js/index.js"></script> -->
+        <script src="../assets/js/shop.js"></script>
+</body>
+
+</html>

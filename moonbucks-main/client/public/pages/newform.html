@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Farm Details</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../assets/css/newform.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Moonbucks <span>Cafe</span></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="meet.html">Meet the Farmers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div class="container  border border-gray-200">
+            <div class="inputbox">
+                <label> Name</label>
+                <input type="text" class="px-5 py-2" id="blogtitle" />
+            </div>
+            <div class="inputbox">
+                <label>Age</label>
+                <input type="number" id="description" cols="0" rows="5" class="px-5 py-2"></inp>
+                <!-- <textarea name="" id="" cols="30" rows="10" ></textarea> -->
+            </div>
+
+            <div class="inputbox">
+                <label>Phone Number</label>
+                <input type="number" id="description" cols="0" rows="5" class="px-5 py-2"></inp>
+                <!-- <textarea name="" id="" cols="30" rows="10" ></textarea> -->
+            </div>
+            <div class="inputbox">
+                <label> email</label>
+                <input type="email" id="description" cols="0" rows="5" class="px-5 py-2"></inp>
+                <!-- <textarea name="" id="" cols="30" rows="10" ></textarea> -->
+            </div>
+
+            <div class="inputbox">
+                <label> Address</label>
+                <textarea name="" id="content" cols="0" rows="2" class="px-5 py-2"></textarea>
+            </div>
+            <div class="inputbox">
+                <label> Form Production detail</label>
+                <textarea name="" id="content" cols="0" rows="2" class="px-5 py-2"></textarea>
+            </div>
+
+            <div id="imagecontainer" class=" border-2 border-dashed">
+                <label class="w-full h-full flex items-center justify-center">
+                    <div class="w-full h-full flex items-center justify-center">
+                        <p>Click to upload</p>
+                    </div>
+                    <input type="file" accept="image/*" class="w-0 h-0" id="fileiput"
+                        onchange="loadimagefromfile(event)">
+                </label>
+            </div>
+            <div class="btngroup">
+                <button onclick="savethedata()" class="bg-emerald-300 px-5 py-2" type="button">save</button>
+                <button onclick="clearthedata()" class="bg-red-200  px-5 py-2" type="button">clear</button>
+            </div>
+
+    </main>
+    <footer>
+        <div class="footer-opt">
+            <div class="footer-item">
+                <h3>Contact Us</h3>
+                <p>Moonbucks Cafe Street</p>
+                <p>City, State ZIP</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: Moonbucks@cafe.com</p>
+            </div>
+            <div class="footer-item">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 8am - 8pm</p>
+                <p>Saturday: 9am - 10pm</p>
+                <p>Sunday: 9am - 6pm</p>
+            </div>
+            <div class="footer-item">
+                <h3>Follow Us</h3>
+                <ul>
+                    <div class="social-media">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; <b>2024 Moonbucks Cafe. All rights reserved.</b>
+        </div>
+        <div class="brand">
+            <label>Moonbucks<span>Cafe</span></label>
+        </div>
+    </footer>
+    <!-- <script src="../assets/js/main.js"></script> -->
+    <script src="../assets/js/newform.js "></script>
+</body>
+
+</html>
